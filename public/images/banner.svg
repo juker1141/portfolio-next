@@ -1,0 +1,50 @@
+<svg width="580" height="399.9999999999999" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g stroke="null">
+  <title>background</title>
+  <rect stroke="null" x="-1" y="-1" width="250.082587" height="173.091439" id="canvas_background" fill="none"/>
+  <g stroke="null" id="canvasGrid" display="none">
+   <rect stroke="null" id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g stroke="null">
+  <title>Layer 1</title>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="3" x="105.4878" y="100.14346" width="370" height="229" id="svg_7" rx="5"/>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="3" x="118.57459" y="108.96766" width="343.82646" height="208.15526" id="svg_8" rx="5"/>
+  <ellipse stroke="#1e3a8a" fill="#ffffff" cx="290.48781" cy="322.80252" id="svg_13" rx="3.32574" ry="3.32574"/>
+  <text fill="#1e3a8a" stroke="#000" stroke-width="0" x="219.024155" y="218.20765" id="svg_24" font-size="24" font-family="sans-serif" text-anchor="start" xml:space="preserve" font-weight="normal" font-style="normal">Hello I'm Ryu</text>
+  <path stroke="#1e3a8a" id="svg_61" d="m230.73178,366.11371l22.40851,-36.58532l74.69504,0l22.4085,36.58532l-119.51206,0l0.00001,0z" stroke-opacity="null" stroke-width="3" fill="#ffffff"/>
+  <line id="svg_62" y2="366.28074" x2="362.92719" y1="366.28074" x1="218.04841" stroke-opacity="null" stroke-width="3" stroke="#1e3a8a" fill="none"/>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="2" stroke-opacity="null" fill-opacity="null" x="74.11739" y="272.16351" width="52.88432" height="94.11721" id="svg_17" rx="5"/>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="2" stroke-opacity="null" fill-opacity="null" x="79.67025" y="280.39234" width="41.77862" height="76.11664" id="svg_18" rx="1"/>
+  <ellipse stroke="#1e3a8a" fill="#ffffff" stroke-opacity="null" fill-opacity="null" cx="100.55956" cy="361.39485" id="svg_20" rx="2.90864" ry="2.82866"/>
+  <line stroke="#1e3a8a" fill="#ffffff" stroke-opacity="null" fill-opacity="null" x1="98.17976" y1="275.76362" x2="102.93935" y2="275.76362" id="svg_23" stroke-linejoin="null" stroke-linecap="null"/>
+  <rect fill="#ffffff" stroke-width="2" x="227.1636" y="50.13333" width="169.09092" height="103.0303" id="svg_6" rx="10" stroke="#1e3a8a"/>
+  <line fill="none" stroke="#1e3a8a" stroke-width="2" x1="226.79987" y1="66.39991" x2="396.01165" y2="66.39991" id="svg_14"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="384.79982" cy="58.39991" id="svg_15" rx="1.2" ry="1.2"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="377.19983" cy="58.39991" id="svg_19" rx="1.2" ry="1.2"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="369.19983" cy="58.39991" id="svg_22" rx="1.2" ry="1.2"/>
+  <text fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="239.19987" y="88.39991" id="svg_30" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve">--- .. --</text>
+  <text fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="247.59986" y="108.7999" id="svg_31" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve">- .. ---  --</text>
+  <text fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="239.19987" y="135.99989" id="svg_32" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve">-- -- . -- ...</text>
+  <rect fill="#ffffff" stroke-width="2" x="30.00004" y="158.829" width="111.69961" height="103.0303" id="svg_34" rx="10" stroke="#1e3a8a"/>
+  <line fill="none" stroke-width="2" x1="30.94066" y1="175.09557" x2="141.45679" y2="175.09557" id="svg_35" stroke="#1e3a8a"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="130.24496" cy="167.09558" id="svg_36" rx="1.2" ry="1.2"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="122.64496" cy="167.09558" id="svg_37" rx="1.2" ry="1.2"/>
+  <ellipse fill="#1e3aee" stroke="#1e3a8a" stroke-width="2" cx="114.64497" cy="167.09558" id="svg_38" rx="1.2" ry="1.2"/>
+  <text fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="39.0401" y="236.95655" id="svg_43" font-size="7" font-family="sans-serif" text-anchor="start" xml:space="preserve" font-weight="normal" font-style="normal">return &lt;h2&gt;{ str1+ str2 }&lt;/h2&gt;;</text>
+  <text style="cursor: move;" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="39.04622" y="197.39133" id="svg_44" font-size="7" font-family="sans-serif" text-anchor="start" xml:space="preserve">let str1 = "Hello ";</text>
+  <text fill="#1e3a8a" stroke="#1e3a8a" stroke-width="0" x="39.04622" y="217.39133" id="svg_45" font-size="7" font-family="sans-serif" text-anchor="start" xml:space="preserve">let str2 = "I'm Ryu";</text>
+  <rect id="svg_40" height="5.36585" width="5.36585" y="296.58728" x="84.14611" stroke-width="0" stroke="#000" fill="#1e3a8a"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="8" stroke-width="0" id="svg_49" y="300.48751" x="93.9022" stroke="#1e3a8a" fill="#1e3a8a">-- _ --</text>
+  <rect id="svg_41" height="5.36585" width="5.36585" y="310.2504" x="84.14611" stroke-width="0" stroke="#000" fill="#1e3a8a"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="8" id="svg_50" y="314.14604" x="93.41439" stroke-width="0" stroke="#1e3a8a" fill="#1e3a8a">^ 口 ^</text>
+  <rect stroke="#000" id="svg_42" height="5.36585" width="5.36585" y="322.43871" x="84.1461" stroke-width="0" fill="#1e3a8a"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="6" id="svg_52" y="326.33749" x="91.95098" stroke-width="0" stroke="#1e3a8a" fill="#1e3a8a">(´・ω・`)</text>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="2" x="408.41439" y="221.94741" width="116.99999" height="144.33333" id="svg_1" rx="5"/>
+  <rect stroke="#1e3a8a" fill="#ffffff" stroke-width="2" x="413.9159" y="228.20768" width="105.99695" height="125.14988" id="svg_4" rx="3"/>
+  <ellipse stroke="#1e3a8a" fill="#ffffff" cx="466.9144" cy="359.7176" id="svg_3" rx="3.88129" ry="3.88129"/>
+  <path id="svg_59" d="m496.33111,242.08315c-8.7558,0 -15.85364,5.32371 -15.85364,11.8898c0,2.2437 0.83912,4.34054 2.28279,6.13149l-2.28279,5.00496l6.35615,-1.63035c2.64867,1.48949 5.93041,2.38455 9.4975,2.38455c8.75579,0 15.85366,-5.32373 15.85366,-11.89065s-7.09787,-11.8898 -15.85366,-11.8898l0,0l-0.00001,0zm-2.60008,16.4558l-2.6476,2.64543l-7.28123,-7.2823l7.28014,-7.28401l2.64869,2.65148l-4.63256,4.63253l4.63256,4.63687zm8.00738,2.64198l-2.64651,-2.64888l4.63383,-4.63167l-4.63383,-4.63342l2.64651,-2.64889l7.28124,7.27711l-7.28124,7.28575z" stroke-width="0" stroke="#000" fill="#1e3a8a"/>
+ </g>
+</svg>

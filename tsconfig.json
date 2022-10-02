@@ -2,6 +2,13 @@
   "compilerOptions": {
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@util/*": ["util/*"],
+      "@comp/*": ["components/*"],
+      "@redux/*": ["redux/*"],
+      "@styles/*": ["styles/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
