@@ -1,8 +1,7 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "next-i18next";
 
 const About = () => {
-  const { t } = useTranslation();
   return (
     <div className="flex flex-col-reverse lg:flex-row justify-center items-center mt-36 lg:mt-10">
       <div className="flex flex-col items-center w-full lg:w-1/2 md:px-24 lg:px-0">
@@ -13,7 +12,10 @@ const About = () => {
         <div className="mt-10 lg:text-xl w-full flex break-words">
           <div className="lg:w-1/12"></div>
           <div className="w-full px-6 lg:px-0">
-            <Trans>{t("about")}</Trans>
+            <Trans
+              i18nKey="about:content"
+              components={[<strong key="0" className="font-Raleway"></strong>]}
+            />
           </div>
         </div>
       </div>

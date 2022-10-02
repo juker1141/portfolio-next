@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.font-default {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+.font-RobotoCondensed {
+  font-family: "Roboto Condensed", "Noto Sans TC", sans-serif;
+}
+
+.font-BarlowCondensed {
+  font-family: "Barlow Condensed", sans-serif;
+}
+/* 標題格式 */
+.font-Caveat {
+  font-family: "Caveat", cursive;
+}
+
+.font-Raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.font-Orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.font-FugazOne {
+  font-family: "Fugaz One", sans-serif;
+}
+
+.font-FjallaOne {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.font-OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-Cinzel {
+  font-family: "Cinzel", sans-serif;
+}
+
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #1e3a8a;
+  transition: 0.4s;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #1e3a8a;
+  transition: 0.4s;
+}

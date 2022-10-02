@@ -4,4 +4,5 @@ module.exports = {
     locales: ["en", "zh"],
     localeDetection: false,
   },
+  react: { useSuspense: false },
 };

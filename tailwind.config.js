@@ -31,6 +31,11 @@ module.exports = {
         },
       },
       backgroundImage: (theme) => ({
+        bannerImg: "url('/images/banner.svg')",
+        bannerMobileImg: "url('/images/banner-mobile.svg')",
+        githubImg: "url('/images/github.svg')",
+        gearImg: "url('/images/gear.svg')",
+
         meImg: "url('/images/me.jpg')",
         metafameImg_sm: "url('/images/metafame_sm.png')",
         velhallaImg_sm: "url('/images/velhalla_sm.png')",

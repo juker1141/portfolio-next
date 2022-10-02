@@ -1,0 +1,30 @@
+{
+  "description": {
+    "title": "Here are a few projects I've worked on recently.",
+    "metafame": {
+      "header": " is a blockchain project developed by me and backend developer.",
+      "content": "I was responsible for Staking & NFT page layout and interact with blockchain smart contract, build with <0>Next.js & Ethers.js</0>. And introduced <0>TypeScript</0> to reduce bug and maintain cost.<1></1><1></1>We developed staking and NFT character mint, makeover, refresh and wardrobe system for our customer. Also I use <0>Spine</0> to play openbox, makeover animate and <0>SketchFab</0> to show 3D NFT character"
+    },
+    "velhalla": {
+      "header": " is my first blockchain project developed with a senior developer. We studied a lot of article for how to connect with blockchain and developed in two weeks",
+      "content": "I was responsible for Stake & Comic & Metaverse page layout and interact with blockchain smart contract. We developed stake and trading comic NFT system, build with <0>Next.js & Web3.js</0>.<1></1><1></1>This is my first time learning about blockchain, that just like connect with a unstable backend API. That's why we spend a lot of time with UI & UX."
+    },
+    "music": {
+      "header": " is a side project that I want to practise with Vue 3.",
+      "content": "build with <0>Vue CLI 4 & Vuex & Tailwind CSS</0>, and use <0>Firebase Database</0> to storage users & songs data.<1></1><1></1>In this side project practise, I was more familiar that how to developed with Vue 3. Also it was a good time to try to developing with Firebase."
+    },
+    "stores": {
+      "header": " build with <0>Vue CLI</0>.",
+      "content": "I developing this websites at my last work, because I was working in a hardware store then. And learn <0>Vue & Vuex</0> in my free time.<1></1>That's why I can develop this websites from the point of the users. It has a complete CMS that you can check all products and orders at PC and mobile device."
+    },
+    "emaily": {
+      "header": "is a app that can send email survey to your users and collect their feedback.",
+      "content": "In front-end, I build with <0>React</0> and <0>Redux</0>.<1></1>And use <0>Express</0> and <0>MongoDB</0> to build database server.<1></1>It's a good experience to learn about how AJAX works in server."
+    },
+    "maskmap": {
+      "header": "could find masks close to your house or work",
+      "content": "when people built maskmap in Taiwan, they usually use OSM and Leaflet. But I want to try the original <0>Google Maps API </0>, becsuse its UI and API are beautiful and interesting.<1></1>In this time, I've learned a lot of how to use <0>Google Maps API </0>."
+    }
+  },
+  "visitbutton": "Visit Website"
+}
