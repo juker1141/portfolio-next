@@ -1,0 +1,27 @@
+{
+  "remind": "※請確認您的內容※",
+  "formFields": [
+    {
+      "label": "姓名",
+      "name": "name"
+    },
+    {
+      "label": "信箱",
+      "name": "email"
+    },
+    {
+      "label": "留言",
+      "name": "messages"
+    }
+  ],
+  "button": {
+    "next": "下一步",
+    "cancel": "取消",
+    "edit": "更改",
+    "send": "寄出"
+  },
+  "error": {
+    "required": "請輸入{{name}}",
+    "email": "無效的信箱: {{email}}"
+  }
+}

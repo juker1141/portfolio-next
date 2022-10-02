@@ -1,0 +1,27 @@
+{
+  "remind": "※Please confirm your entries※",
+  "formFields": [
+    {
+      "label": "Name",
+      "name": "name"
+    },
+    {
+      "label": "Email",
+      "name": "email"
+    },
+    {
+      "label": "Messages",
+      "name": "messages"
+    }
+  ],
+  "button": {
+    "next": "Next",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "send": "Send"
+  },
+  "error": {
+    "required": "Please provide a {{name}}",
+    "email": "The email is invalid: {{email}}"
+  }
+}

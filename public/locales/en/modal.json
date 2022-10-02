@@ -1,0 +1,13 @@
+{
+  "success": {
+    "title": "Success !",
+    "description": "I have already received your reply",
+    "content": "and will get back to you shortly"
+  },
+  "warning": {
+    "title": "Oops !",
+    "description": "Something went wrong",
+    "content": "Please wait for moment and try again on sending email"
+  },
+  "closebutton": "Close window"
+}

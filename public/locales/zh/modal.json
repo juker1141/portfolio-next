@@ -1,0 +1,13 @@
+{
+  "success": {
+    "title": "感謝您 !",
+    "description": "我已收到您的來信",
+    "content": "並將盡速給您回覆!"
+  },
+  "warning": {
+    "title": "哎呀 !",
+    "description": "現在出了一些問題",
+    "content": "請稍待片刻並再嘗試給我來信"
+  },
+  "closebutton": "關閉"
+}
