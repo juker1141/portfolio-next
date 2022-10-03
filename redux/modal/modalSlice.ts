@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import emailjs from 'emailjs-com';
-import keys from "@conf/keys";
+import getKeys from "@conf/keys";
 
 interface State {
   isShow: boolean;
@@ -13,20 +13,23 @@ const initialState: State = {
   status: null,
 };
 
-
-export const sendEmail = (formValues) => async (dispatch) => {
+export const sendEmail = ({formValues, reset}) => async (dispatch) => {
   dispatch(toggleModal({state: true, status: "loading"}));
-  emailjs.send(
-    keys.emailjsServicesID,
-    keys.emailjsTemplateID,
-    formValues,
-    keys.emailjsUserID,
-  )
-    .then((res) => {
-      dispatch(toggleModal({state: true, status: "success"}));
-    }, (error) => {
-      dispatch(toggleModal({state: true, status: "error"}));
-    });
+  const keys = getKeys();
+
+  try {
+    await emailjs.send(
+      keys.emailjsServicesID,
+      keys.emailjsTemplateID,
+      formValues,
+      keys.emailjsUserID,
+    )
+
+    dispatch(toggleModal({state: true, status: "success"}));
+    reset();
+  } catch(error) {
+    dispatch(toggleModal({state: true, status: "error"}));
+  }
 };
 
 export const modalSlice = createSlice({

@@ -67,5 +67,20 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      letterSpacing: ["hover", "focus"],
+      backgroundImage: ["hover", "focus"],
+      borderWidth: ["hover", "focus", "group-hover"],
+      padding: ["hover", "focus"],
+      fontWeight: ["hover", "focus", "disabled"],
+      opacity: ["disabled"],
+      rotate: ["group-hover"],
+      margin: ["group-hover"],
+      inset: ["group-hover"],
+      backgroundColor: ["disabled"],
+      textColor: ["disabled"],
+    },
+  },
   plugins: [],
 };

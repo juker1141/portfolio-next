@@ -67,8 +67,10 @@ const HomePage: NextPage = () => {
           <Main />
           <Footer />
           <GuideButton />
+
           <div className="fixed bottom-0 w-full pb-2 lg:pb-5 bg-white z-20" />
         </div>
+        <div id="modal"></div>
       </main>
     </div>
   );

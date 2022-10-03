@@ -26,14 +26,12 @@ const Modal = (props) => {
       <div
         className="fixed inset-0 w-full h-full z-20 bg-primary
             bg-opacity-50 duration-300 overflow-y-auto"
-        onClick={props.onClose}
-      >
+        onClick={props.onClose}>
         <div
           onClick={(e) => {
             e.stopPropagation();
           }}
-          className="w-11/12 md:w-3/5 lg:w-2/5 xl:w-2/5 2xl:w-1/5 mx-auto mt-52 lg:mt-72 opacity-100"
-        >
+          className="w-11/12 md:w-3/5 lg:w-2/5 xl:w-2/5 2xl:w-1/5 mx-auto mt-52 lg:mt-72 opacity-100">
           <div className="bg-white shadow-lg rounded-lg text-blue-900 z-20">
             <div className="w-full flex justify-center pt-5">
               {props.status ? iconClass(props.status) : ""}
@@ -48,7 +46,9 @@ const Modal = (props) => {
         </div>
       </div>,
       modalElement
-    );
+    ) as unknown as JSX.Element;
+  } else {
+    return <div></div>;
   }
 };
 

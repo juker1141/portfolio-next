@@ -1,72 +1,72 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { withTranslation } from 'react-i18next';
-import { toggleModal } from '../../actions';
-import Modal from '../Modal';
+import React from "react";
+import { useAppDispatch, useAppSelector } from "@redux/hook";
+import { useTranslation } from "next-i18next";
+import { toggleModal } from "@redux/modal/modalSlice";
+import Modal from "../Modal";
 
-class ContactInfowindow extends React.Component {
-  renderContent() {
-    if (this.props.modal === 'success') {
+const ContactInfowindow = (props) => {
+  const { t }: { t: any } = useTranslation();
+  const dispatch = useAppDispatch();
+  const modal = useAppSelector((state) => state.modal);
+
+  function renderContent() {
+    if (modal.status === "success") {
       return (
         <React.Fragment>
-          <div className="text-xl font-black mb-5">{this.props.t('infowindow.success.title')}</div>
-          <div className="mb-3 font-bold">{this.props.t('infowindow.success.description')}</div>
-          <div className="font-bold">{this.props.t('infowindow.success.content')}</div>
+          <div className="text-xl font-black mb-5">
+            {t("modal:success.title")}
+          </div>
+          <div className="mb-3 font-bold">{t("modal:success.description")}</div>
+          <div className="font-bold">{t("modal:success.content")}</div>
         </React.Fragment>
-      )
+      );
     }
     return (
       <React.Fragment>
-        <div className="text-xl font-black mb-5">{this.props.t('infowindow.warning.title')}</div>
-        <div className="mb-3 font-bold">{this.props.t('infowindow.warning.description')}</div>
-        <div>{this.props.t('infowindow.warning.content')}</div>
+        <div className="text-xl font-black mb-5">
+          {t("modal:warning.title")}
+        </div>
+        <div className="mb-3 font-bold">{t("modal:warning.description")}</div>
+        <div>{t("modal:warning.content")}</div>
       </React.Fragment>
     );
   }
 
-  renderActions(status) {
+  function renderActions(status) {
     return (
       <React.Fragment>
         <button
-          onClick={() => { this.handleClick() }}
-          className="bg-blue-900 text-white text-base font-bold py-2 lg:py-2 px-8 flex items-center rounded justify-center mb-3 lg:mb-2"
-        >
-          {this.props.t('infowindow.closebutton')}
+          onClick={() => {
+            handleClick();
+          }}
+          className="bg-blue-900 text-white text-base font-bold py-2 lg:py-2 px-8 flex items-center rounded justify-center mb-3 lg:mb-2">
+          {t("modal:closebutton")}
         </button>
       </React.Fragment>
-    )
-  };
-
-  handleClick() {
-    if (this.props.modal === 'success') {
-      this.props.onClick();
-    }
-    this.props.toggleModal(false)
+    );
   }
 
-  render() {
-    if (this.props.modal === 'loading') {
-      return (
-        <Modal
-          status={'loading'}
-        />
-      )
+  function handleClick() {
+    if (modal.status === "success") {
+      props.onClick();
     }
-    return (
-      <Modal
-        status={this.props.modal === 'success' ? 'success' : 'error'}
-        content={this.renderContent()}
-        actions={this.renderActions(this.props.modal)}
-        onClose={() => { this.props.toggleModal(false) }}
-      />
-    )
+    dispatch(toggleModal(false));
   }
+
+  if (modal.isShow && modal.status === "loading") {
+    return <Modal status={"loading"} />;
+  }
+  console.log(modal);
+  return (
+    <Modal
+      status={modal.isShow && modal.status === "success" ? "success" : "error"}
+      content={renderContent()}
+      actions={renderActions(modal)}
+      onClose={() => {
+        dispatch(toggleModal(false));
+      }}
+    />
+  );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    modal: state.modal,
-  }
-}
-
-export default connect(mapStateToProps, { toggleModal })(withTranslation()(ContactInfowindow));
+export default ContactInfowindow;

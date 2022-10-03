@@ -8,7 +8,11 @@
 import dev from "@conf/dev";
 import prod from "@conf/prod";
 
-const keys = () => {
+const getKeys = (): {
+  emailjsServicesID: string;
+  emailjsTemplateID: string;
+  emailjsUserID: string;
+} => {
   if (process.env.NODE_ENV === 'production') {
     // 我們在 production - return the prod set of keys
     return prod;
@@ -18,4 +22,4 @@ const keys = () => {
   }
 }
 
-export default keys;
+export default getKeys;
