@@ -8,7 +8,6 @@ const Header = () => {
   //   languageSelect: false,
   // };
   const [isShowMenu, setIsShowMenu] = useState(false);
-  const [isContactBtnHover, setIsContactBtnHover] = useState(false);
 
   // function handleChange(select) {
   //   this.props.i18n.changeLanguage(select);
@@ -80,71 +79,6 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li className="relative">
-              {/* <button
-                  onClick={() => { this.setState({ languageSelect: !this.state.languageSelect }) }}
-                  // onClick={(e) => { this.handleChange(e) }}
-                  className={`flex items-center pt-2 pb-3 px-3 lg:px-6 hover:tracking-wide hover:text-blue-500
-                  rounded focus:outline-none ${this.state.languageSelect ? 'bg-lighterBlue' : ''}`}
-                >
-                  <span className="flex items-end">
-                    En | 
-                    <span className="text-3xl lg:text-2xl font-bold pl-2">中</span>
-                  </span>
-                  <i className="fas fa-sort-down text-xl ml-2"></i>
-                </button>
-                <ul
-                  className={`absolute -bottom-34 inset-x-0 bg-lightBlue w-full rounded shadow-xl
-                  ${this.state.languageSelect ? '' : 'hidden'}`}
-                >
-                  <li>
-                    <button
-                      onClick={() => { this.handleChange('en') }}
-                      className="px-6 py-4 w-full rounded-t text-2xl focus:outline-none disabled:bg-gray-200
-                      disabled:font-bold"
-                      disabled={this.props.i18n.language === 'en'}
-                    >
-                      English
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      onClick={() => { this.handleChange('zh') }}
-                      className="px-6 py-4 w-full rounded-b text-2xl focus:outline-none disabled:bg-gray-200
-                      disabled:font-bold"
-                      disabled={this.props.i18n.language === 'zh'}
-                    >
-                      中文
-                    </button>
-                  </li>
-                </ul> */}
-              {/* <button
-                  onClick={() => { this.setState({ languageSelect: !this.state.languageSelect }) }}
-                  // onClick={(e) => { this.handleChange(e) }}
-                  className={`flex items-center pt-2 pb-3 px-3 lg:px-6 hover:tracking-wide hover:text-blue-500
-                  rounded focus:outline-none ${this.state.languageSelect ? 'bg-lighterBlue' : ''}`}
-                >
-                  <span className="flex items-end">
-                    En | 
-                    <span className="text-3xl lg:text-2xl font-bold pl-2">中</span>
-                  </span>
-                  <i className="fas fa-sort-down text-xl ml-2"></i>
-                </button> */}
-              {/* {router?.locales?.map((locale) => {
-                return (
-                  <button
-                    key={locale}
-                    onClick={() => {
-                      router.push(router.asPath, router.asPath, {
-                        locale: locale,
-                      });
-                    }}
-                    className="pt-2 pb-3 px-3 lg:px-6 hover:text-sky-600">
-                    {locale}
-                  </button>
-                );
-              })} */}
-            </li>
             <li className="py-3 lg:py-0 flex items-center h-[60px]">
               <a
                 onClick={() => {
@@ -165,20 +99,14 @@ const Header = () => {
                 Works
               </a>
             </li>
-            <li className="py-3 lg:py-0 h-[60px]">
+            <li className="py-3 lg:py-0 flex items-center h-[60px]">
               <a
                 onClick={() => {
                   setIsShowMenu(false);
                 }}
-                onMouseMove={() => setIsContactBtnHover(true)}
-                onMouseLeave={() => setIsContactBtnHover(false)}
                 href="#contact"
-                className="lg:flex justify-between items-end transition-all focus:outline-none px-3 py-3 lg:py-3 lg:px-6 hover:text-sky-600">
+                className="pt-2 pb-3 px-3 lg:px-6 hover:text-sky-600">
                 Contact
-                <i
-                  className={`fa-regular ${
-                    isContactBtnHover ? "fa-comment-dots" : "fa-comment"
-                  } ml-2`}></i>
               </a>
             </li>
             <li className="py-3 lg:py-0 flex items-center h-[60px] relative group">
