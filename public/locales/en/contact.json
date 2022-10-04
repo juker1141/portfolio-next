@@ -12,7 +12,7 @@
     "send": "Send"
   },
   "error": {
-    "required": "Please provide a {{name}}",
-    "email": "The email is invalid"
+    "required": "Please provide a {{name}}.",
+    "email": "The email is invalid."
   }
 }

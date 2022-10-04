@@ -7,7 +7,7 @@
   "warning": {
     "title": "Oops !",
     "description": "Something went wrong",
-    "content": "Please wait for moment and try again on sending email"
+    "content": "Please wait for a moment and try again to send an email"
   },
   "closebutton": "Close window"
 }
