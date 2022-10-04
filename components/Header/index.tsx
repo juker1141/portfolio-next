@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   // state = {
   //   menuShow: false,
   //   languageSelect: false,
@@ -128,8 +130,22 @@ const Header = () => {
                   </span>
                   <i className="fas fa-sort-down text-xl ml-2"></i>
                 </button> */}
+              {/* {router?.locales?.map((locale) => {
+                return (
+                  <button
+                    key={locale}
+                    onClick={() => {
+                      router.push(router.asPath, router.asPath, {
+                        locale: locale,
+                      });
+                    }}
+                    className="pt-2 pb-3 px-3 lg:px-6 hover:text-sky-600">
+                    {locale}
+                  </button>
+                );
+              })} */}
             </li>
-            <li className="py-3 lg:py-0">
+            <li className="py-3 lg:py-0 flex items-center h-[60px]">
               <a
                 onClick={() => {
                   setIsShowMenu(false);
@@ -139,7 +155,7 @@ const Header = () => {
                 About
               </a>
             </li>
-            <li className="py-3 lg:py-0">
+            <li className="py-3 lg:py-0 flex items-center h-[60px]">
               <a
                 onClick={() => {
                   setIsShowMenu(false);
@@ -149,7 +165,7 @@ const Header = () => {
                 Works
               </a>
             </li>
-            <li className="py-3 lg:py-0">
+            <li className="py-3 lg:py-0 h-[60px]">
               <a
                 onClick={() => {
                   setIsShowMenu(false);
@@ -164,6 +180,37 @@ const Header = () => {
                     isContactBtnHover ? "fa-comment-dots" : "fa-comment"
                   } ml-2`}></i>
               </a>
+            </li>
+            <li className="py-3 lg:py-0 flex items-center h-[60px] relative group">
+              <button
+                type="button"
+                className="flex items-center px-3 py-3 hover:text-sky-600">
+                <i className="fa-solid fa-earth-asia text-2xl"></i>
+                <i className="fa-solid fa-caret-down text-lg ml-3"></i>
+              </button>
+              <div className="absolute top-[60px] left-0 lg:right-0 bg-white shadow hidden group-hover:block">
+                {router?.locales?.map((locale) => {
+                  return (
+                    <button
+                      key={locale}
+                      onClick={() => {
+                        if (router.locale === locale) return;
+
+                        router.push("/", "/", {
+                          locale: locale,
+                        });
+                        setIsShowMenu(false);
+                      }}
+                      className={`pt-1.5 pb-3 px-3 lg:px-6 flex items-center ${
+                        router.locale === locale
+                          ? "bg-blue-900 text-white"
+                          : "hover:text-sky-600"
+                      }`}>
+                      {locale}
+                    </button>
+                  );
+                })}
+              </div>
             </li>
           </ul>
         </div>

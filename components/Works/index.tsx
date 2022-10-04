@@ -48,12 +48,14 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a> */}
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-primary rounded-lg mr-2">Next</li>
-              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
-              <li className="px-2 bg-blue-600 rounded-lg mr-2">TypeScript</li>
-              <li className="px-2 bg-blue-800 rounded-lg mr-2">Ethers</li>
-              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-primary rounded-lg mr-2 mb-2">Next</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2 mb-2">Redux</li>
+              <li className="px-2 bg-blue-600 rounded-lg mr-2 mb-2">
+                TypeScript
+              </li>
+              <li className="px-2 bg-blue-800 rounded-lg mr-2 mb-2">Ethers</li>
+              <li className="px-2 bg-sky-500 rounded-lg mb-2">Tailwind CSS</li>
             </ul>
             <div className="mb-3">
               <strong>MetaFame</strong>
@@ -133,11 +135,11 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a> */}
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-primary rounded-lg mr-2">Next</li>
-              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
-              <li className="px-2 bg-blue-700 rounded-lg mr-2">Web3</li>
-              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-primary rounded-lg mr-2 mb-2">Next</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2 mb-2">Redux</li>
+              <li className="px-2 bg-blue-700 rounded-lg mr-2 mb-2">Web3</li>
+              <li className="px-2 bg-sky-500 rounded-lg mb-2">Tailwind CSS</li>
             </ul>
             <div className="mb-3">
               <strong>Velhalla</strong>
@@ -203,10 +205,10 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-green-500 rounded-lg mr-2">Vue</li>
-              <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
-              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-green-500 rounded-lg mr-2 mb-2">Vue</li>
+              <li className="px-2 bg-green-500 rounded-lg mr-2 mb-2">Vuex</li>
+              <li className="px-2 bg-sky-500 rounded-lg mb-2">Tailwind CSS</li>
             </ul>
             <div className="mb-3">
               <strong>Music Station</strong>
@@ -271,14 +273,19 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-green-500 rounded-lg mr-2">Vue</li>
-              <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
-              <li className="px-2 bg-purple-600 rounded-lg">BS4</li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-green-500 rounded-lg mr-2 mb-2">Vue</li>
+              <li className="px-2 bg-green-500 rounded-lg mr-2 mb-2">Vuex</li>
+              <li className="px-2 bg-purple-600 rounded-lg mb-2">BS4</li>
             </ul>
             <div className="mb-3">
               <strong>Hardware Store</strong>
-              {t("works:description.stores.header")}
+              <Trans
+                i18nKey="works:description.stores.header"
+                components={[
+                  <strong key="0" className="font-Raleway"></strong>,
+                ]}
+              />
             </div>
             <Trans
               i18nKey="works:description.stores.content"
@@ -338,11 +345,11 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
-              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
-              <li className="px-2 bg-primary rounded-lg mr-2">Express</li>
-              <li className="px-2 bg-green-500 rounded-lg">MongoDB</li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-blue-600 rounded-lg mr-2 mb-2">React</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2 mb-2">Redux</li>
+              <li className="px-2 bg-primary rounded-lg mr-2 mb-2">Express</li>
+              <li className="px-2 bg-green-500 rounded-lg mb-2">MongoDB</li>
             </ul>
             <div className="mb-3">
               <span className="font-bold">Emaily</span>{" "}
@@ -410,10 +417,12 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-xs font-bold">
-              <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
-              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
-              <li className="px-2 bg-red-600 rounded-lg">Google Maps API </li>
+            <ul className="mb-2 flex text-white text-xs font-bold flex-wrap">
+              <li className="px-2 bg-blue-600 rounded-lg mr-2 mb-2">React</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2 mb-2">Redux</li>
+              <li className="px-2 bg-red-600 rounded-lg mb-2">
+                Google Maps API{" "}
+              </li>
             </ul>
             <div className="mb-3">
               <span className="font-bold">Mask Map</span>{" "}

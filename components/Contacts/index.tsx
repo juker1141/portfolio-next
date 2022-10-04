@@ -204,7 +204,7 @@ const Contact = (props) => {
     <div className="w-full pb-4">
       <div className="w-full flex justify-center items-center mt-20 lg:mt-32">
         <div className="flex flex-col items-center w-full lg:w-1/2 px-6 sm:px-24 lg:px-0">
-          <div className="font-Raleway text-5xl lg:text-6xl w-full text-left lg:text-center relative">
+          <div className="font-Raleway text-5xl lg:text-6xl w-full text-left lg:text-center relative mb-6">
             <span id="contact" className="absolute -top-36 lg:-top-52"></span>
             Contact
           </div>
