@@ -7,8 +7,8 @@ import { RootState } from "@redux/store";
 import { toggleFormReview } from "@redux/formReview/formReviewSlice";
 import { sendEmail } from "@redux/modal/modalSlice";
 
-import ContactForm from "./ContactForm";
-import ContactFormReview from "./ContactFormReview";
+// import ContactForm from "./ContactForm";
+// import ContactFormReview from "./ContactFormReview";
 import ContactInfowindow from "./ContactInfowindow";
 
 const Contact = (props) => {
