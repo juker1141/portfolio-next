@@ -1,5 +1,6 @@
 import Banner from "@comp/Banner";
 import About from "@comp/About";
+import Experience from "@comp/Experience";
 import Works from "@comp/Works";
 import Contact from "@comp/Contacts";
 
@@ -9,6 +10,7 @@ const Main = () => {
       <div className="container mx-auto flex flex-col items-center relative">
         <Banner />
         <About />
+        <Experience />
         <Works />
         <Contact />
       </div>

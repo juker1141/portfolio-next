@@ -94,6 +94,16 @@ const Header = () => {
                 onClick={() => {
                   setIsShowMenu(false);
                 }}
+                href="#experience"
+                className="pt-2 pb-3 px-3 lg:px-6 hover:text-sky-600">
+                Experience
+              </a>
+            </li>
+            <li className="py-3 lg:py-0 flex items-center h-[60px]">
+              <a
+                onClick={() => {
+                  setIsShowMenu(false);
+                }}
                 href="#works"
                 className="pt-2 pb-3 px-3 lg:px-6 hover:text-sky-600">
                 Works

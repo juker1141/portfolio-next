@@ -18,6 +18,7 @@ export async function getStaticProps({ locale }) {
         "common",
         "banner",
         "about",
+        "experience",
         "contact",
         "works",
         "modal",
