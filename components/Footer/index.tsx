@@ -5,8 +5,7 @@ const Footer = () => {
       <div className="flex justify-center">
         <a
           href="#banner"
-          className="font-Caveat text-5xl lg:text-6xl pt-8 lg:pt-12 pr-3 mb-6"
-        >
+          className="font-Caveat text-5xl lg:text-6xl pt-8 lg:pt-12 pr-3 mb-6">
           Ryu
         </a>
       </div>
@@ -16,8 +15,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/chih-lung-tu-a6807821a/"
             target="_blank"
             rel="noreferrer noopener"
-            className="flex items-center m-2"
-          >
+            className="flex items-center m-2">
             <i className="fab fa-linkedin text-3xl"></i>
           </a>
         </li>
@@ -26,29 +24,20 @@ const Footer = () => {
             href="https://github.com/juker1141"
             target="_blank"
             rel="noreferrer noopener"
-            className="flex items-center m-2"
-          >
+            className="flex items-center m-2">
             <i className="fab fa-github-square text-3xl"></i>
           </a>
         </li>
         <li>
           <a
             href="mailto:juker1141@gmail.com"
-            className="flex items-center m-2"
-          >
+            className="flex items-center m-2">
             <i className="fas fa-envelope-square text-3xl"></i>
           </a>
         </li>
       </ul>
-      <div className="flex justify-center">
-        <a
-          href="https://tailwindcss.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <span className="text-xs">Made with </span>
-          <span className="text-sm font-black">tailwindcss</span>
-        </a>
+      <div className="flex justify-center text-sm font-black">
+        Copyright © {new Date().getFullYear()}. All rights reserved.
       </div>
     </div>
   );
