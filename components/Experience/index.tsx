@@ -10,8 +10,8 @@ const Experience = () => {
           <span id="experience" className="absolute -top-36 lg:-top-52"></span>
           Experience
         </div>
-        <ul className="mt-10 lg:text-xl w-full xl:w-10/12 px-6 lg:px-0 flex break-words ">
-          <li className="flex flex-col lg:flex-row lg:justify-between w-full">
+        <ul className="mt-10 lg:text-xl w-full px-6 lg:px-0 flex justify-center">
+          <li className="flex flex-col lg:flex-row lg:justify-between w-full xl:w-10/12">
             <div className="w-full lg:w-1/2 flex items-start">
               <div className="w-full flex items-center py-1 mb-2 lg:mb-0">
                 <p className="text-sky-600 text-lg lg:text-2xl flex-shrink-0 mr-5">
