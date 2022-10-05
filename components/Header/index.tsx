@@ -139,7 +139,7 @@ const Header = () => {
                         });
                         setIsShowMenu(false);
                       }}
-                      className={`pt-1.5 pb-3 px-3 lg:px-6 flex items-center ${
+                      className={`pt-1.5 pb-3 px-6 flex items-center ${
                         router.locale === locale
                           ? "bg-blue-900 text-white"
                           : "hover:text-sky-600"
