@@ -10,24 +10,24 @@ const Experience = () => {
           <span id="experience" className="absolute -top-36 lg:-top-52"></span>
           Experience
         </div>
-        <ul className="mt-10 lg:text-xl w-full lg:w-10/12 px-6 lg:px-0 flex break-words mx-0 lg:mx-10">
-          <li className="flex w-full">
-            <div className="w-1/2 flex items-start mr-10">
-              <div className="w-full flex items-center py-1">
-                <p className="text-sky-600 text-2xl flex-shrink-0 mr-5">
+        <ul className="mt-10 lg:text-xl w-full xl:w-10/12 px-6 lg:px-0 flex break-words ">
+          <li className="flex flex-col lg:flex-row lg:justify-between w-full">
+            <div className="w-full lg:w-1/2 flex items-start">
+              <div className="w-full flex items-center py-1 mb-2 lg:mb-0">
+                <p className="text-sky-600 text-lg lg:text-2xl flex-shrink-0 mr-5">
                   {t("experience:date.oct")} 2021 - {t("experience:date.now")}
                 </p>
-                <hr className="border-sky-600 w-20 border-b-2" />
+                <hr className="border-sky-600 w-20 border lg:border-b-2" />
               </div>
             </div>
-            <div className="flex flex-col w-1/2">
-              <h3 className="text-4xl mb-5">
+            <div className="flex flex-col w-full lg:w-1/2">
+              <h3 className="text-3xl lg:text-4xl mb-3 flex flex-col lg:flex-row">
                 Fornt-end Developer
-                <span className="mx-3 text-lg">-</span>
-                <span className="mr-5 text-lg">
-                  {t("experience:realtime.name")}
-                </span>
               </h3>
+              <div className="flex justify-end mb-3">
+                <span className="mx-3 text-lg">-</span>
+                <span className="text-lg">{t("experience:realtime.name")}</span>
+              </div>
               <p>
                 <Trans
                   i18nKey="experience:realtime.content"
