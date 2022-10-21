@@ -173,7 +173,7 @@ const Contact = (props) => {
             ""
           )}
         </div>
-        <div className="mt-4 lg:mt-8 flex flex-col-reverse lg:flex-row lg:justify-between lg:mx-8 xl:mx-16">
+        <div className="mt-4 xl:mt-8 flex flex-col-reverse xl:flex-row xl:justify-between xl:mx-8">
           <button
             className="text-base font-bold py-4 lg:py-2 px-24
                 focus:outline-none focus:shadow-outline rounded flex justify-center items-center
@@ -186,7 +186,7 @@ const Contact = (props) => {
           <button
             type="submit"
             className="bg-blue-900 text-white text-base font-bold py-4 px-24
-              flex items-center rounded justify-center disabled:opacity-70 mb-5 lg:mb-0"
+              flex items-center rounded justify-center disabled:opacity-70 mb-5 xl:mb-0"
             disabled={
               errors.hasOwnProperty("name") ||
               errors.hasOwnProperty("email") ||
